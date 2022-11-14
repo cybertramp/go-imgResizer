@@ -1,10 +1,12 @@
-# README
+# go-imgResizer
 
 ## About
 
 Go Wails를 사용하여 만든 Image Resizer입니다.
 
 이미지 배율이 1:1이여야 만 올라가는 곳이 존재하는데, 그럴때 사용하기 위해 만든 유틸입니다.
+
+![img](./screenshot.png)
 
 ## 기능
 - 이미지를 불러와 1:1 비율로 자동으로 resize 하여 저장
@@ -14,5 +16,11 @@ Go Wails를 사용하여 만든 Image Resizer입니다.
 ## 빌드
 ```
 cd go-imgresizer
-wails build
+wails build clean
 ```
+
+## Inside
+- Backend
+  - Go Wails
+- Frontend
+  - Vue3 /w ts

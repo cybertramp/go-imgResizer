@@ -11,13 +11,15 @@ import (
 //go:embed all:frontend/dist
 var assets embed.FS
 
+const Version string = "v0.1"
+
 func main() {
 	// Create an instance of the app structure
 	app := NewApp()
 
 	// Create application with options
 	err := wails.Run(&options.App{
-		Title:  "myproject",
+		Title:  "go-ImgResizer " + Version,
 		Width:  640,
 		Height: 720,
 		AssetServer: &assetserver.Options{
